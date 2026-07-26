@@ -1,14 +1,12 @@
 %define upstream_name		GooCanvas2
-%define upstream_version	0.06
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Version:	0.06
+Release:	2
 Summary:	Perl binding for GooCanvas2 widget using Glib::Object::Introspection
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/P/PE/PERLMAX/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/authors/id/P/PE/PERLMAX/%{upstream_name}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(goocanvas-2.0)
 BuildRequires:	perl(ExtUtils::Depends)
@@ -35,7 +33,7 @@ the Cairo 2d library for drawing. This is a simple and basic
 implementation of this wonderful Canvas widget.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor NO_PACKLIST=1
