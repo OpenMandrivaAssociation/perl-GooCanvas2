@@ -1,12 +1,13 @@
 %define upstream_name		GooCanvas2
+%define upstream_version 0.06
 Name:		perl-%{upstream_name}
 Version:	0.06
-Release:	2
+Release:	1
 Summary:	Perl binding for GooCanvas2 widget using Glib::Object::Introspection
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/P/PE/PERLMAX/%{upstream_name}-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/P/PE/PERLMAX/GooCanvas2-0.06.tar.gz
 BuildArch:	noarch
 BuildRequires:	pkgconfig(goocanvas-2.0)
 BuildRequires:	perl(ExtUtils::Depends)
