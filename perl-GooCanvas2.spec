@@ -2,7 +2,7 @@
 %define upstream_version 0.06
 Name:		perl-%{upstream_name}
 Version:	0.06
-Release:	4
+Release:	5
 Summary:	Perl binding for GooCanvas2 widget using Glib::Object::Introspection
 License:	GPL+ or Artistic
 Group:		Development/Perl
@@ -37,7 +37,7 @@ implementation of this wonderful Canvas widget.
 %setup -q -n GooCanvas2-0.06
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor NO_PACKLIST=1
+perl Makefile.PL INSTALLDIRS=vendor NO_PACKLIST=1
 %{__make}
 
 
